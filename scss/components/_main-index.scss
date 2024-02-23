@@ -6,8 +6,7 @@
     display: none;
 
     img {
-        height: 50%;
-        margin-top: -50px;
+        height: 100%;
     }
 }
 
@@ -17,9 +16,10 @@
 .separador {
     margin-top: $separador;
     background-color: nth($coloresbackground,6);
-    border: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgb(0, 0, 0);
 
     h3 {
+        text-transform: uppercase;
         color: rgba(29, 26, 26, 0.897);
         justify-content: map-get($map:$flex,$key:centrar-x );
         align-items: map-get($map:$flex,$key:centrar-y );
@@ -36,9 +36,11 @@
     background-color: nth($coloresbackground,7);
     margin-top: $separador;
     margin-bottom: -16px;
-    border: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgb(0, 0, 0);
 
         h1 {
+            text-transform: uppercase;
             color: rgb(0, 0, 0);
             text-align: map-get($map: $text, $key:centrar-texto );
             font-size: 50px;
@@ -66,6 +68,7 @@
             border-radius: 8px;
 
             .card {
+                width: 22rem;
                 margin: 22px 20px;
                 border: 2px solid #46280d;
                 border-radius: 30px;
@@ -75,11 +78,17 @@
                     font-size: 20px;
                     background: rgb(187, 181, 170);
 
-                    a {
-                        @extend %inside-card-button !optional
+                    .card-title {
+                        text-transform: uppercase;
                     }
+
                 }
             }
+        }
+
+        a {
+            @extend %inside-card-button !optional;
+
         }
 }
 
@@ -88,9 +97,18 @@
     text-align: map-get($map: $text, $key:centrar-texto );
     margin-top: 30px;
 
-        button {
-            @extend %products-button;
+    button {
+        @extend %products-button;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+
+            h4 {
+                text-transform: uppercase;
+            }
         }
+    }
 }
 /* Fin cards productos */
 
@@ -117,6 +135,7 @@
         }
 
         h4 {
+            text-transform: uppercase;
             font-weight: 700;
         }
         
@@ -127,6 +146,11 @@
 
         button {
             @extend %button-recomendaciones-clientes;
+            box-sizing: border-box;
+
+            h5 {
+                text-transform: uppercase;
+            }
         }
         
     }
@@ -142,7 +166,8 @@
     background-color: nth($coloresbackground,10);
     margin: -16px 0 -16px;
     padding: 80px;
-    border: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
     align-items: center;
 
         div {
@@ -167,6 +192,10 @@
 
                 button {
                     @extend %button-video-cafe;
+
+                    h5 {
+                        font-weight: 700;
+                    }
                 }
             }
         }
@@ -187,7 +216,7 @@
 
 // Mobile Design
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
     /* Main INDEX */
 
@@ -197,6 +226,21 @@
         #carouselExampleIndicators {
             width: 100%;
         }
+
+        #fondo-cards {
+
+            .div-container__productos {
+
+                button {
+                    width: 70%;
+
+                    h4 {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+
 
         .contenedor-grid {
             @include flex(flex,wrap);
@@ -228,12 +272,14 @@
 
 // Mobile chiquito
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 330px) {
 
     /* Main INDEX*/
 
     h1 {
-        font-size: 2.1rem;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.8rem !important;
     }
 
     .container-video-cafe {
@@ -244,13 +290,16 @@
             section {
 
                 h2 {
-                    font-size: 2rem;
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-size: 1.5rem;
                 }
         
                 p {
                     font-size: .9rem;
                 }
             }
+            
             button {
                 font-size: 1.1rem;
             }
@@ -266,6 +315,10 @@
 
     /* Main INDEX */
 
+    .main-index {
+        margin-top: 105px;
+    }
+
     .container-video-cafe {
         @include flex(flex,wrap);
         row-gap: 3rem;
@@ -280,6 +333,7 @@
             }
 
             button {
+                box-sizing: border-box;
                 margin-top: 20px;
             }
     }

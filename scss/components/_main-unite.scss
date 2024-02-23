@@ -5,10 +5,9 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: nth($list: $coloresbackground, $n:10);
-    background-image: url(../../img/resumen-desenfoque-defocused-restaurante-cafeteria-interior-cafe.jpg);
+    background-image: url(../img/resumen-desenfoque-defocused-restaurante-cafeteria-interior-cafe.jpg);
     @include backgroundimage (no-repeat, cover, center center);
-    height: 100vh;
+    height: 100%;
 
     form {
         width: 80%;
@@ -17,7 +16,7 @@
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-        margin-top: 180px; 
+        margin-top: 130px; 
 
         .form-contenedor__div {
             margin-bottom: 15px;
@@ -64,8 +63,12 @@
 }
 
 .mas-informacion {
-    color: #000;
-    margin-top: 20px;
+    background: nth($list: $coloresbackground, $n:1 );
+    background: linear-gradient(222deg, rgba(71,51,32,1) 24%, rgba(45,30,20,1) 53%, rgba(36,20,12,1) 78%);
+    padding: 15px;
+    border-radius: 10px;
+    color: #ffffff;
+    margin-top: 60px;
     text-align: map-get($map: $text, $key:centrar-texto );
     font-size: 25px;
 }
@@ -79,27 +82,15 @@
     /* MAIN UNITE A NOSOTROS */
     
     .main-unite-a-nosotros {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        background-color: rgb(219, 199, 162);
-
+        height: 100%;
+        
         form {
-            width: 80%;
-            max-width: 400px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-top: 120px;   
         }
     }
       
     .mas-informacion {
-        color: #000;
-        margin-top: 20px;
-        text-align: map-get($map: $text, $key:centrar-texto );
-        font-size: 20px !important;
+        font-size: 1rem;
     }
 
     /* FIN MAIN UNITE A NOSOTROS */
@@ -112,10 +103,7 @@
     /* Main contacto */
 
     .mas-informacion {
-        color: #000;
-        font-size: 15px !important;
-        margin-top: 20px;
-        text-align: map-get($map: $text, $key:centrar-texto );
+        font-size: 1rem;
     }
 
     /* Fin main contacto */
@@ -128,27 +116,10 @@
     /* MAIN UNITE A NOSOTROS */
     
     .main-unite-a-nosotros {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        background-color: rgb(219, 199, 162);
         height: 100%;
 
         form {
-            width: 80%;
-            max-width: 400px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-top: 120px; 
-        }
-
-        .mas-informacion {
-            color: #000;
-            margin-top: 20px;
-            text-align: map-get($map: $text, $key:centrar-texto );
-            font-size: 25px;
         }
     }
     

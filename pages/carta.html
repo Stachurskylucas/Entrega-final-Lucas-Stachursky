@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,60 +7,109 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
     <script src="https://kit.fontawesome.com/2bb7b51ac7.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="../img/9800_3_09.png" />
+    <link rel="shortcut icon" href="../img/9800_3_09.png" alt="Logo de la pagina cafelinos" />
     <!-- NORMALIZE -->
     <link rel="stylesheet" href="../css/normalize.css">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
     <title>Cafelinos</title>
+
+    <!-- SEO -->
+
+    <meta name="keywords" content="Cafe, Gatos, Cafetería, Mascotas, Café y mascotas, Cat Coffee, Cats, Coffee, Pets, Kitty, Cats and coffee, Coffee shop, Gatos y Cafe, Único, Lugar, Degustación, Relajante, Encanto">
+
+    <meta name="description" content="Descubre nuestra cafetería con encanto, donde el café se mezcla con la compañía felina. ¡Ambiente relajante rodeado de gatos! ¡Visítanos y vive una experiencia única!">
+
+    <meta name="telephone" content="+51111234-5678">
+
+    <meta name="author" content="Lucas Martin Stachursky">
+
+    <meta name="lenguage" content="Spanish">
+
+    <meta name="geo.placename" content="Argentina">
+
+    <!-- FIN SEO -->
+
 </head>
 <body>
     
-    <!-- Header -->
+  <!-- Header desktop -->
 
-      <header class="header-carta">
-        <nav class="navbar navbar-dark bg-dark fixed-top">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-              <img 
-              class="nav-container__img"
-              src="../img/9800_3_09.png" 
-              alt="Logo pagina">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="carta.html">Carta</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="productos.html">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="sucursales.html">Sucursales</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="unite-a-nosotros.html">Unite a nosotros!</a>
-                  </li>
-              </div>
+    <header class="header-desktop">
+      <nav class="header-desktop__nav">
+        <div class="header-desktop__div">
+          <a class="header-desktop__a" href="../index.html">
+            <img 
+            class="header-desktop__img"
+            src="../img/9800_3_09.png" 
+            alt="Logo de la página cafelinos en el encabezado">
+          </a>
+        </div>
+        <ul class="header-desktop__ul">
+          <li class="header-desktop__li">
+            <a href="./carta.html">Carta</a>
+          </li>
+          <li class="header-desktop__li">
+            <a href="./productos.html">Productos</a>
+          </li>
+          <li class="header-desktop__li">
+            <a href="./sucursales.html">Sucursales</a>
+          </li>
+          <li class="header-desktop__li">
+            <a href="./unite-a-nosotros.html">Unite a nosotros!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+  <!-- Fin header desktop -->
+
+  <!-- Header tablet & mobile -->
+
+    <header class="header-responsive">
+      <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img 
+            class="nav-container__img"
+            src="../img/9800_3_09.png" 
+            alt="Logo de la página cafelinos en el encabezado">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./carta.html">Carta</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./sucursales.html">Sucursales</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./unite-a-nosotros.html">Unite a nosotros!</a>
+                </li>
+              </ul>
             </div>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
 
-     <!-- Fin header -->
+  <!-- Fin header tablet & mobile -->
 
     <!-- Main -->
 
@@ -75,7 +124,7 @@
             <div>
               <h4>Espresso</h4>
             </div>
-            <img src="https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/138179/common/products/69" alt="Foto espresso">
+            <img src="https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/138179/common/products/69" alt="Foto de nuestro espresso">
           </div>
 
 
@@ -83,7 +132,7 @@
             <div>
               <h4>Cappuccino</h4>
             </div>
-            <img src="https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/138179/common/products/76" alt="Foto Cappuccino">
+            <img src="https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/138179/common/products/76" alt="Foto de nuestro Cappuccino">
           </div>
 
 
@@ -91,7 +140,7 @@
             <div>
               <h4>Latte</h4>
             </div>
-            <img src="https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/138179/common/products/75" alt="Foto latte">
+            <img src="https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/138179/common/products/75" alt="Foto de nuestro latte">
           </div>
 
 
@@ -99,7 +148,7 @@
             <div>
               <h4>Coffee</h4>
             </div>
-            <img src="https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/138179/common/products/73" alt="Foto coffee">
+            <img src="https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/138179/common/products/73" alt="Foto de nuestro café">
           </div>
 
           
@@ -107,7 +156,7 @@
             <div>
               <h4>Mocha</h4>
             </div>
-            <img src="https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/138179/common/products/78" alt="Foto Mocha">
+            <img src="https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/138179/common/products/78" alt="Foto de nuestro Mocha">
           </div>
 
 
@@ -115,7 +164,7 @@
             <div>
               <h4>Flat White</h4>
             </div>
-            <img src="https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/138179/common/products/77" alt="Foto flat white">
+            <img src="https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/138179/common/products/77" alt="Foto de nuestro flat white">
           </div>
 
 
@@ -123,14 +172,14 @@
             <div>
               <h4>Macchiato</h4>
             </div>
-            <img src="https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/138179/common/products/70" alt="Foto macchiato">
+            <img src="https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/138179/common/products/70" alt="Foto de nuestro macchiato">
           </div>
 
           <div class="contenedor-carta__menu">
             <div>
               <h4>Matcha latte</h4>
             </div>
-            <img src="https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/138179/common/products/169" alt="Foto matcha latte">
+            <img src="https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/138179/common/products/169" alt="Foto de nuestro matcha latte">
           </div>
           
           <!-- Fin carta -->
@@ -213,7 +262,7 @@
 
               <!-- Instagram  -->
               <div class="footer-container__redes">
-                <a class="footer-container__a" href="https://www.instagram.com/luucaas.st/">
+                <a class="footer-container__a" href="https://www.instagram.com/luucaas.st/" target="_blank">
                   <img 
                   class="footer-container__redes__img"
                   alt="Instagram cafelinos"

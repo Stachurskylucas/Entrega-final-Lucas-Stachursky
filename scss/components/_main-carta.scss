@@ -1,9 +1,10 @@
 /* MAIN CARTA */
 
 .main-carta {
-    padding-top: 13%;
+    padding-top: 20px;
     background-color: nth($coloresbackground,5);
     background: linear-gradient(354deg, rgba(43,41,40,1) 38%, rgba(18,17,17,1) 87%);
+
 
     .contenedor-carta__div {
         @include gridcolumns(grid, repeat(4, 1fr));
@@ -20,7 +21,7 @@
 
                 &:hover {
                     transform: scale(1.11);
-                    transform: rotate(20deg)
+                    transform: rotate(20deg);
                 }
             }
 
@@ -48,7 +49,6 @@
     /* Main Carta  */
 
     .main-carta {
-        margin-top: 15% !important;
 
             .contenedor-carta__div {
                 @include flex(flex !important, wrap);
@@ -59,6 +59,11 @@
 
                         img {
                             width: $width100x100;
+                            transition: none;
+
+                            &:hover {
+                                transform: none;
+                            }
                         }
 
                         h4 {
@@ -84,7 +89,18 @@
     // Main carta
 
     .main-carta {
-        margin-top: 17% !important;
+
+        .contenedor-carta {
+
+            .contenedor-carta__menu {
+
+                div {
+                    h4 {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
     }
 
     // Fin main carta
@@ -97,7 +113,7 @@
     /* Main Carta  */
 
     .main-carta {
-        margin-top: 3%;
+        margin-top: 110px;
 
         .contenedor-carta__div {
             @include gridcolumns(grid, repeat(2, 50%));
@@ -113,6 +129,11 @@
 
                 img {
                     width: $width100x100;
+                    transition: none;
+
+                    &:hover {
+                        transform: none;
+                    }
                 }
 
                 h4 {
